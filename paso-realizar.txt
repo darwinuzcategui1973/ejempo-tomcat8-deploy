@@ -1,0 +1,11 @@
+como vemos se instala mysql, se copia el fichero de configuración y el script en bash que es el comando que se va a ejecutar
+ por defecto al crear los contenedores. Generamos la imagen:
+
+sudo su
+docker build -t tomcat:1.1 .
+
+Y creamos un contenedor indicando la contraseña del root:
+$ sudo docker run -d -p 8079:8080 --name miproyectotomcar tomcat8:1.01
+//original sin cambio
+$ docker run -d -p 8065:8080 --name Docker-mitomcat dockerbd_mysql/tomcat:9.0.8-jre8-alpine
+
