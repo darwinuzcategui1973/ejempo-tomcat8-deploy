@@ -16,7 +16,9 @@ RUN echo 'cotenedor tomcat8 Darwin Felipe Uzcateguie # excelente'
 # RUN chmod +x /opt/tomcat8/bin/*.sh
 
 EXPOSE 8080
+RUN echo "Hola ${PORT}!"
+CMD echo "Hola ${PORTE}!"
 # docker run -p $PORT:8080  
-RUN docker run -p $PORT:8080  
+# RUN docker run -p $PORT:8080  
 
 CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
