@@ -1,9 +1,10 @@
-FROM tomcat:8.5.47-jdk8-openjdk
+# FROM tomcat:8.5.47-jdk8-openjdk
+FROM  11642590/tomcat8-java8-mio:1.0
 
 # Comment
 RUN echo 'cotenedor tomcat8 Darwin Felipe Uzcateguie # excelente'
 # copio .war
-COPY ejemplo.war /usr/local/tomcat/webapps
+# COPY ejemplo.war /usr/local/tomcat/webapps
 # ADD ES COPIAR PERO PARA LINUX
 # ADD ejemplo.war /usr/local/tomcat/webapps
 
