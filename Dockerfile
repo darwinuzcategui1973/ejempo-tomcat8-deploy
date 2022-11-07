@@ -17,7 +17,7 @@ RUN echo 'cotenedor tomcat8 Darwin Felipe Uzcateguie # excelente'
 
 EXPOSE 8080
 RUN echo "Hola ${PORT}!"
-CMD echo "Hola ${PORTE}!"
+CMD echo "Hola ${PORT}!"
 # docker run -p $PORT:8080  
 # RUN docker run -p $PORT:8080  
 
