@@ -8,5 +8,5 @@ EXPOSE 8080
 CMD ["gunicorn"  , "-b", "0.0.0.0:8080", "https://ejempo-tomcat8-deploy-production.up.railway.app/"]
 # 0.0.0.0:$PORT
 # CMD ["/usr/local/tomcat/bin/catalina.sh", "run", "-b", "localhost:$PORT/ejemplo"]
-ENTRYPOINT ["http://localhost:$PORT", "-D", "FOREGROUND"]
+# ENTRYPOINT ["http://localhost:$PORT", "-D", "FOREGROUND"]
 
