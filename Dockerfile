@@ -1,4 +1,5 @@
 FROM  11642590/tomcat8-java8-mio:1.0
+ENV PORT 8989
 EXPOSE 8080
 # CMD ["/usr/local/tomcat/bin/catalina.sh", "run", "-b", "0.0.0.0:$PORT/ejemplo"]
 # CMD ["/usr/local/tomcat/bin/catalina.sh", "run", "-b", "localhost:$PORT/ejemplo"]
